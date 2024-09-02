@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple To-Do App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-blue-50 min-h-screen flex justify-center">
+    <div class="w-full max-w-md bg-white p-6 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-bold text-blue-600 mb-6 text-center">
+        To-Do List
+      </h2>
+      <div class="flex items-center border-b border-blue-300 py-2 mb-4">
+        <input
+          id="taskInput"
+          class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+          type="text"
+          placeholder="Add new task"
+          aria-label="New task"
+        />
+        <button
+          id="addTaskButton"
+          class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded"
+          type="button"
+        >
+          Add
+        </button>
+      </div>
+      <ul id="taskList" class="space-y-3">
+        <!-- Tasks will be added here dynamically -->
+      </ul>
+    </div>
+
+    <script src="/index.js">
+
+    </script>
+  </body>
+</html>
